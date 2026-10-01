@@ -160,6 +160,7 @@ on:
         options:
           - 'Clashoo + iStore'
           - 'Clashoo'
+          - 'Clashoo + Docker'
           - 'Clashoo + iStore + Docker'
           - 'iStore'
           - 'OpenClash + iStore'
@@ -170,13 +171,13 @@ on:
       aria_dufs:
         description: '附加包（包名用空格分隔，默认 aria2 + dufs，留空则不装）'
         required: false
-        default: 'luci-app-aria2 aria2 luci-i18n-aria2-zh-cn luci-app-dufs luci-i18n-dufs-zh-cn'
+        default: ''
         type: string
 
       rootfs_size:
         description: '软件包分区大小（MB）'
         required: true
-        default: '1024'
+        default: '4096'
         type: string
 
       builder_name:
